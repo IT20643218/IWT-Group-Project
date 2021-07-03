@@ -1,0 +1,82 @@
+
+<?php 
+
+include 'config.php';
+
+error_reporting(0); // For not showing any error
+
+if (isset($_POST['submit'])) { // Check press or not Post Comment Button
+	$name = $_POST['Name']; // Get Name from form
+	$email = $_POST['email']; // Get Email from form
+	$comment = $_POST['comment']; // Get Comment from form
+
+	$sql = "INSERT INTO  bright(Name, email, comment)
+			VALUES ('$Name', '$email', '$comment')";
+	$result = mysqli_query($conn, $sql);
+	if ($result) {
+		echo "<script>alert('Comment added successfully.')</script>";
+	} else {
+		echo "<script>alert('Comment does not add.')</script>";
+	}
+}
+
+?>
+
+
+
+
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width *device-width,initial-scale*1.0">
+
+     <link rel="stylesheet"type="text/css"href="style.css">
+
+<title>comment system in php-pure coding</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form action=""method="POST"class="form">
+	  <div class="row">
+	   <div class="input-group">
+	      <label for="name">Name</label>
+		  <input type="text" name="Name"id="name"placeholder="Enter your Name"value="<?php echo $name ;?>"required>
+	   </div>
+	   <div class="input-group">
+	      <label for="e-mail">E-mail</label>
+		  <input type="text"name="email"id="name"placeholder="Enter your mail"value="<?php echo $email  ;?>" required>
+	   </div>
+	    <div class="input-group textarea">
+	      <label for="comment">comment</label>
+		  <textarea id="comment"name="comment"placeholder="Enter your comment" required>value="<?php echo $comment  ;?>"</textarea>
+	   </div>
+	    <div class="input-group btn">
+	      <button name="submit" class="btn">Post Comment</button>
+		</div>
+	  </div>
+	 </form>
+	 
+	 <div class="prev-comments">
+			<?php 
+			
+			$sql = "SELECT * FROM bright";
+			$result = mysqli_query($conn, $sql);
+			if (mysqli_num_rows($result) > 0) {
+				while ($row = mysqli_fetch_assoc($result)) {
+
+			?>
+			<div class="single-item">
+				<h4><?php echo $row['name']; ?></h4>
+				<a href="mailto:<?php echo $row['email']; ?>"><?php echo $row['email']; ?></a>
+				<p><?php echo $row['comment']; ?></p>
+			</div>
+			<?php
+
+				}
+			}
+			
+			?>
+	 
+  </div>
+ </body>
+ </html>
