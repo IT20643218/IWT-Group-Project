@@ -1,0 +1,169 @@
+body{
+  background-color: lightblue;
+}
+
+label{
+  font-family: Arial, Helvetica, sans-serif;
+  width:240px;
+  display:inline-block;
+  font-size:14px;
+  margin:7px 2px;
+  position:relative;
+  left:20px;
+}
+
+form{
+margin-top:25px;
+}
+
+.button{
+  background-color:Green;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position:relative;
+  bottom:6px;
+  right:20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float:right;
+  right-margin:4px;
+  border-radius: 8px;
+}
+
+.buton{
+  background-color:Red;
+  border: none;
+  color: white;
+  padding: 5px 29px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float:right;
+  position:relative;
+  bottom:6px;
+  right:20px;
+  border-radius: 8px;
+}
+
+
+* {
+   		margin: 0;
+   		padding: 0;
+   	}
+
+   	header {
+   		background-image: url(NewProjectimges/construction-background-lighter.jpg);
+        background-size:contain;
+        background-position: center;
+        background-color:  #A6D609;
+        text-align: center;
+        height: 200px;
+	}
+h1 {
+        color: navy;
+        font-family: fantasy;
+        font-size: 60px;        		
+        left: 400px; 
+    }
+    h3 {
+        color: #FD6A02;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 25px;
+    }
+   	.logo {
+   		float: left;
+   		position: relative;
+   		left: 20px;
+   	}
+   	.discription {
+   		position: relative;
+   		top: 50px;
+   		right: 80px;
+   	}
+   	.login {
+   		float: right;
+   		position: relative;
+   		bottom: 75px;
+   		right: 20px;  		
+   	}
+   	#login {
+   		position: relative;
+   		bottom: 30px;
+   		left: 10px;
+   		box-shadow: 0px 0px 60px 15px #606060FF;
+   		border:none;
+   	}
+   	#avater {
+   		box-shadow: 0px 0px 50px 10px #606060FF;
+                border-radius: 50px;
+				position:relative;
+				right:20px;
+				top:20px;
+   	}
+#u01{
+		position:relative;
+		top:20px;
+		right:18px;
+		float:right;
+		color:navy;
+		
+		
+	}
+
+.footer {
+    	background-color:black;
+    	text-align: center;
+    	height: 150px;
+    }
+    .address {
+    	float: left;
+    	position: relative;
+    	top: 20px;
+    	left: 20px;
+        color:White;
+       
+    }
+    .image {
+    	position: relative;
+    	top: 15px;
+    	right: 130px;
+        
+        
+    }
+   
+
+    .text{
+        color:white;
+    }
+
+    .signin {
+    	float: right;
+    	position: relative;
+        bottom: 45px;
+        right: 50px;
+    }
+    .B2 {
+          		float:right;
+          		background-color:  #D6ED17FF;
+          		color: black;
+          		width: 60px;
+          		height: 20px;
+          		border-radius: 5px;
+          		font-family: sans-serif;
+          		font-weight: bold;
+          		border:none;
+          		margin-right: 10px;
+          	}
+    .B2:hover {
+          		background-color: orange;
+          		color: black;
+    }
