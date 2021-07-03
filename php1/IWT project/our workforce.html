@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Constrution Manage System</title>
+</head>
+
+   <style type="text/css">
+
+   	* {
+   		margin: 0;
+   		padding: 0;
+   	}
+   	body {
+   		background-color: #252422;
+   		color: white;
+   	}
+   	 header {
+      background-image: url(construction-background-lighter.jpg);
+        background-size:contain;
+        background-position: center;
+        text-align: center;
+        height: 150px;
+  }
+    .logo {
+      float: left;
+      position: relative;
+      left: 20px;
+    }
+    .discription {
+      position: relative;
+      top: 40px;
+      right: 80px;
+    }
+    .login {
+      float: right;
+      position: relative;
+      bottom: 30px;
+      right: 20px;
+            
+    }
+    #u01 {
+      position: relative;
+      top: 18px;
+      left: 10px;
+      
+      float: right;
+      color: navy;
+
+    }
+    #avater {
+      box-shadow: 0px 0px 50px 10px #606060FF;
+      border-radius: 50px;
+      position: relative;
+      right: 5px;
+      top: 10px;
+    }
+    h1 {
+        color: navy;
+        font-family: fantasy;
+        font-size: 40px;            
+        left: 400px; 
+    }
+    h3 {
+        color: #FD6A02;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .navbar{
+    	border: none;
+        height: 50px;
+        background-color: black;
+        color: orange;
+        font-family: sans-serif;
+        
+    }
+    #name {
+        float: left;          	
+        color: #A6D609;            	
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    #home {
+        float: right;
+        width: 90px;
+        height: 50px;
+        border:none;
+        background-color: black;
+        color: #A6D609;
+        font-weight: bold;
+    }
+    #home:hover {
+        background-color:  #A6D609;
+        color: black;
+    }
+    .text {
+    	margin-left: 20px;
+    	font-family: cursive;
+    }
+    #search {
+    	margin-right: 20px;
+    	float: right;
+    	border-radius: 25px;
+    	border:none;
+    	height: 20px;
+    	width: 300px; 
+    }
+    .labor_table {
+    	
+        margin-right: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    table {
+    	margin:0;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+   		
+    }
+    th {
+        background-color: black;
+        font-size: 16px;
+        color: white;
+        height: 35px;
+    }
+    tr{
+        color: black;
+        height: 28px;
+    }
+    tr:nth-child(odd) {
+        background-color: gray;
+    }
+    tr:nth-child(even) {
+        background-color:  #A6D609;
+    }
+    tr:hover {
+        background-color:  #D6ED17FF;
+    }
+    .B1 {
+          		float:right;
+          		background-color:  #D6ED17FF;
+          		color: black;
+          		width: 80px;
+          		height: 25px;
+          		border-radius: 25px;
+          		font-family: sans-serif;
+          		font-weight: bold;
+          		border:none;
+          		margin-right: 10px;
+          	}
+    .B1:hover {
+          		background-color: orange;
+          		color: black;
+    }
+    .footer {
+      background-color: black;
+      text-align: center;
+      height: 160px;
+    }
+    .address {
+      float: left;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+    .image {
+      position: relative;
+      top: 20px;
+      right: 60px;
+    }
+    .signin {
+      float: right;
+      position: relative;
+        bottom: 10px;
+        right: 10px;
+    }
+    #B2 {
+              float:right;
+              background-color:  #D6ED17FF;
+              color: black;
+              width: 60px;
+              height: 20px;
+              border-radius: 5px;
+              font-family: sans-serif;
+              font-weight: bold;
+              border:none;
+              margin-right: 10px;
+            }
+    #B2:hover {
+              background-color: orange;
+              color: black;
+    }
+   .B3 {
+              float: left;
+              background-color:  #D6ED17FF;
+              color: black;
+              width: 80px;
+              height: 25px;
+              border-radius: 25px;
+              font-family: sans-serif;
+              font-weight: bold;
+              border:none;
+              margin-right: 10px;
+              position: relative;
+              bottom: 37px;
+              left: 10px;
+            }
+    .B3:hover {
+              background-color: orange;
+              color: black;
+}
+
+   </style>
+
+<body>
+<!----------------header------------>	
+	 <header>
+<!---------------------------->
+   
+      <div class="logo">
+        <img src="1620819920792_bright.png" alt="our logo" width="140" height="140">
+      </div>
+ 
+<!---------------------------->
+    
+      <div class="discription">
+        <H1>Bright Construction PLC</H1>
+        <H3>We are ready to help you to achive your goals</H3>
+      </div>
+    
+<!---------------------------->
+  
+      <div class="login">
+        <img src="download.png" alt="avater" width="40" height="40" id="avater">
+        <!--<input type="email" value placeholder="  Login" id="login">-->
+        <h3 id="u01">User</h3>
+      </div>
+     
+<!---------------------------->       
+    </header>
+	
+<!----------------navigation bar------------>
+	<div class="navbar">
+		<ul>
+			<p id="name">Workforce preview</p>
+            <button id="home">Home</button>
+		</ul>		
+	</div>
+	<br>
+<!----------------search bar------------>
+	<div class="text">
+		Workforce Allocation <input type="text" placeholder="  search..." id="search">
+	</div><br>
+<!----------------labor table------------>
+    <div class="labor_table">
+    	<table>
+    		<tr>
+               <th>Labour Name</th>
+               <th>Labour Category</th>
+               <th>Working Project</th>
+               <th>Job Typr</th>
+               <th>Allocated Project</th>
+               <th>Skill or Non</th>
+            </tr>
+            <tr>
+               <td>H.A.Kumara</td>
+               <td>Electrician</td>
+               <td>BCC0040</td>
+               <td>Permanent</td>
+               <td>BCC0051</td>
+               <td>Skilled</td>
+            </tr>
+            <tr>
+               <td>Sunil Bandara</td>
+               <td>plumbing</td>
+               <td>BCC0043</td>
+               <td>Permanent</td>
+               <td>BCC0056</td>
+               <td>Skilled</td>
+            </tr>
+            <tr>
+               <td>G.Kumara</td>
+               <td>Electrician</td>
+               <td>BCC0065</td>
+               <td>Permanent</td>
+               <td>BCC0051</td>
+               <td>Skilled</td>
+            </tr>
+            <tr>
+                <td>K.Sunil</td>
+                <td>Glazing</td>
+                <td>BCC0046</td>
+                <td>Contract Basis</td>
+                <td>BCC0056</td>
+                <td>Skilled</td>
+            </tr>
+            <tr>
+                <td>B.B.Rathnapala</td>
+                <td>Glazing</td>
+                <td>BCC0040</td>
+                <td>Permanent</td>
+                <td>BCC0051</td>
+                <td>Unskilled</td>
+            </tr>
+            <tr>
+                <td>I.S.Perera</td>
+                <td>Painting</td>
+                <td>BCC0047</td>
+                <td>Contract Basis</td>
+                <td>BCC0051</td>
+                <td>Skilled</td>
+            </tr>
+            <tr>
+                <td>P.K.Supun</td>
+                <td>Electrician</td>
+                <td>BCC0048</td>
+                <td>Contract Basis</td>
+                <td>BCC0041</td>
+                <td>Skilled</td>
+            </tr>
+            <tr>
+                <td>I.I.Jayawardana</td>
+                <td>Electrician</td>
+                <td>BCC0030</td>
+                <td>Permanent</td>
+                <td>BCC0041</td>
+                <td>Unskilled</td>
+            </tr>
+            <tr>
+                <td>K.L.Lakmewan</td>
+                <td>Painting</td>
+                <td>BCC0045</td>
+                <td>Permanent</td>
+                <td>BCC0031</td>
+                <td>Skilled</td>
+            </tr>
+            <tr>
+                <td>H.Kumara</td>
+                <td>Electrician</td>
+                <td>BCC0050</td>
+                <td>Permanent</td>
+                <td>BCC0071</td>
+                <td>Unskilled</td>
+            </tr>
+            <tr>
+                <td>A.wasantha</td>
+                <td>Ironwork</td>
+                <td>BCC0049</td>
+                <td>Permanent</td>
+                <td>BCC0057</td>
+                <td>Skilled</td>
+            </tr>
+            <tr>
+               <td>K.Kasun</td>
+               <td>Masonary</td>
+               <td>BCC0040</td>
+               <td>Permanent</td>
+               <td>BCC0051</td>
+               <td>Skilled</td>
+            </tr>
+            <tr>
+               <td>H.A.Rajapaksha</td>
+               <td>Electrician</td>
+               <td>BCC0040</td>
+               <td>Permanent</td>
+               <td>BCC0051</td>
+               <td>Skilled</td>
+            </tr>
+            <tr>
+               <td>H.Gamini</td>
+               <td>plumbing</td>
+               <td>BCC0040</td>
+               <td>Permanent</td>
+               <td>BCC0051</td>
+               <td>Skilled</td>
+            </tr>
+            <tr>
+                <td>J.Perera</td>
+                <td>painting</td>
+                <td>BCC0040</td>
+                <td>Permanent</td>
+                <td>BCC0061</td>
+                <td>Unskilled</td>
+            </tr>
+            <tr>
+                <td>P.K.Kavinga</td>
+                <td>Electrician</td>
+                <td>BCC0048</td>
+                <td>Contract Basis</td>
+                <td>BCC0041</td>
+                <td>Skilled</td>
+            </tr>
+            <tr>
+                <td>Kalum Bandara</td>
+               <td>plumbing</td>
+               <td>BCC0043</td>
+               <td>Permanent</td>
+               <td>BCC0056</td>
+               <td>Skilled</td>
+            </tr>
+            <tr>
+                <td>Kumara</td>
+                <td>Electrician</td>
+                <td>BCC0040</td>
+                <td>Permanent</td>
+                <td>BCC0059</td>
+                <td>Skilled</td>
+            </tr>
+          
+         
+    	</table>
+    	    <a href="http://localhost/php1/IWT%20project/metirial.html"><button class="B1">Next</button></a><br><br>
+
+          <button class="B3">Add +</button>
+    </div>
+
+ <!----------------footer------------>   
+    <div class="footer">
+      <footer>
+      <div class="address">
+        <p><u><b>Office contact</b></u></p>
+            No 304 B, 1<sup>st</sup> lane, Campus Road,<br>
+           Rathnapitiya,<br>
+           Boralasgamuwa.<br>
+           071 1234567 / 011 9876542<br>
+           info@ABC.lk
+      </div>
+      <div class="image">
+        <p id="text">Standerds</p>
+            <img src="construction-logo-template-260nw-1176504949.webp" width="160" height="100" id="text-image">
+      </div>
+      <div class="signin">
+        <input type="text" value placeholder="E-mail" id="mail"><button id="B2">Sign in</button>
+      </div>
+    </footer>
+    </div>
+
+    <script type="text/javascript">
+
+         document.getElementById("f02").onclick=function() {
+
+        document.getElementById("msg").innerHTML="Requirement sent Successfully";
+       
+        }
+      
+      //login gose to header
+               document.getElementById("B2").onclick= function() {
+
+          var textEntered = ""
+          textEntered = document.getElementById("mail").value;
+          document.getElementById("u01").innerHTML = textEntered;
+
+          alert ("Name change Sucessfull")
+        }
+      
+    </script>
+</body>
+
+</html>

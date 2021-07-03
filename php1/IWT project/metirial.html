@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Material and Equipment</title>
+</head>
+
+   <style type="text/css">
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #252422;
+      color: white;
+    }
+    header {
+      background-image: url(construction-background-lighter.jpg);
+        background-size:contain;
+        background-position: center;
+        text-align: center;
+        height: 150px;
+  }
+    .logo {
+      float: left;
+      position: relative;
+      left: 20px;
+    }
+    .discription {
+      position: relative;
+      top: 40px;
+      right: 80px;
+    }
+    .login {
+      float: right;
+      position: relative;
+      bottom: 30px;
+      right: 20px;
+            
+    }
+    #u01 {
+      position: relative;
+      top: 18px;
+      left: 10px;
+      
+      float: right;
+      color: navy;
+
+    }
+    #avater {
+      box-shadow: 0px 0px 50px 10px #606060FF;
+      border-radius: 50px;
+      position: relative;
+      right: 5px;
+      top: 10px;
+    }
+    h1 {
+        color: navy;
+        font-family: fantasy;
+        font-size: 40px;            
+        left: 400px; 
+    }
+    h3 {
+        color: #FD6A02;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .navbar{
+      border: none;
+        height: 50px;
+        background-color: black;
+        color: orange;
+        font-family: sans-serif;
+        
+    }
+    #name {
+        float: left;            
+        color: orange;             
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    #home {
+        float: right;
+        width: 90px;
+        height: 50px;
+        border:none;
+        background-color: black;
+        color:orange;
+        font-weight: bold;
+    }
+    #home:hover {
+        background-color: orange;
+        color: black;
+    }
+    .text {
+      margin-left: 20px;
+      font-family: cursive;
+    }
+    #search {
+      margin-right: 20px;
+      float: right;
+      border-radius: 25px;
+      border:none;
+      height: 20px;
+      width: 300px; 
+    }
+    .labor_table {
+      
+        margin-right: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    table {
+      margin:0;
+        padding: 5px;
+        text-align: center;
+        width: 65%;
+      
+    }
+    th {
+        background-color: black;
+        font-size: 16px;
+        color: white;
+        height: 35px;
+    }
+    tr{
+        color: black;
+        height: 28px;
+    }
+    tr:nth-child(odd) {
+        background-color: white;
+    }
+    tr:nth-child(even) {
+        background-color: orange;
+    }
+    tr:hover {
+        background-color:  #D6ED17FF;
+    }
+    
+    .footer {
+      background-color: black;
+      text-align: center;
+      height: 160px;
+    }
+    .address {
+      float: left;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+    .image {
+      position: relative;
+      top: 20px;
+      right: 60px;
+    }
+    .signin {
+      float: right;
+      position: relative;
+        bottom: 10px;
+        right: 10px;
+    }
+    #B2 {
+              float:right;
+              background-color:  #D6ED17FF;
+              color: black;
+              width: 60px;
+              height: 20px;
+              border-radius: 5px;
+              font-family: sans-serif;
+              font-weight: bold;
+              border:none;
+              margin-right: 10px;
+            }
+    #B2:hover {
+              background-color: orange;
+              color: black;
+    }
+    .requirement_form {
+      background-image: url(screen_shot_2013-12-27_at_4.16.54_pm.webp);
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      font-family: sans-serif;
+      padding: 60px;
+      padding-bottom: 42px; 
+      right: 20px;
+      bottom: 38px;
+      width: 25%;
+      float: right;
+      position: absolute;
+     
+      
+    }
+    #form_h {
+      font-size: 48px;
+      color: #FD6A02;
+    }
+   
+    #f02 {
+              float:right;
+              background-color: #FD6A02;
+              color: black;
+              width: 100%;
+              height: 35px;
+              border-radius: 25px;
+              font-family: sans-serif;
+              font-weight: bold;
+              border:none;
+              font-size: 16px;
+             
+            }
+    #f02:hover {
+              background-color: orange;
+              color: black;
+    }
+    #msg {
+      color: #D6ED17FF;
+      text-align: right;
+      font-size: 16px;
+      font-family: cursive;
+      margin-right: 50px;
+      margin-bottom: 10px;
+    }
+    h4 {
+      color: navy;
+    }
+
+
+   </style>
+
+<body>
+<!----------------header------------> 
+  
+    <header>
+<!---------------------------->
+   
+      <div class="logo">
+        <img src="1620819920792_bright.png" alt="our logo" width="140" height="140">
+      </div>
+ 
+<!---------------------------->
+    
+      <div class="discription">
+        <H1>Bright Construction PLC</H1>
+        <H3>We are ready to help you to achive your goals</H3>
+      </div>
+    
+<!---------------------------->
+  
+      <div class="login">
+        <img src="download.png" alt="avater" width="40" height="40" id="avater">
+        <!--<input type="email" value placeholder="  Login" id="login">-->
+        <h3 id="u01">User</h3>
+      </div>
+     
+<!---------------------------->       
+    </header>
+  
+<!----------------navigation bar------------>
+  <div class="navbar">
+    <ul>
+      <p id="name">Material Preview</p>
+            <button id="home">Home</button>
+    </ul>   
+  </div>
+  <br>
+<!----------------search bar------------>
+  <div class="text">
+   Material and Equipment usage<input type="text" placeholder="  search..." id="search">
+  </div><br>
+<!----------------labor table------------>
+    <div class="labor_table">
+      <table>
+        <tr>
+               <th>Branch Name</th>
+               <th>Matirial Name</th>
+               <th>Matirial Type</th>
+               <th>Used Quantity</th>
+               <th>Working Project</th>
+               <th>Allocated Project</th>
+            </tr>
+            <tr>
+               <td> Kurunagala</td>
+               <td>Alumenium</td>
+               <td>weight</td>
+               <td>02 tons</td>
+               <td>BCC0040</td>
+               <td>BCC0051</td>
+            </tr>
+            <tr>
+               <td> Kurunagala 02</td>
+               <td>Blocks</td>
+               <td>Blocks</td>
+               <td>5000 Blocks</td>
+               <td>BCC0043</td>
+               <td>BCC0045</td>
+            </tr>
+            <tr>
+               <td>Kaduwela</td>
+               <td>Concrete</td>
+               <td>Units</td>
+               <td>02 Units</td>
+               <td>BCC0023</td>
+               <td>BCC0050</td>
+            </tr>
+            <tr>
+                <td>Anuradhapura</td>
+                <td>Granite</td>
+                <td>Cubic meter</td>
+                <td>10 Cubic meter</td>
+                <td>BCC0051</td>
+                <td>BCC0061</td>
+            </tr>
+            <tr>
+                <td>Hanwella</td>
+                <td>Loaders</td>
+                <td>Units</td>
+                <td>03 Units</td>
+                <td>BCC0058</td>
+                <td>BCC0078</td>
+            </tr>
+            <tr>
+                <td>Ampara</td>
+                <td>Loaders</td>
+                <td>Units</td>
+                <td>05 Units</td>
+                <td>BCC0064</td>
+                <td>BCC0059</td>
+            </tr>
+            <tr>
+                <td>colombo 03</td>
+                <td>ceramic</td>
+                <td>units</td>
+                <td>1000 units</td>
+                <td>BCC0052</td>
+                <td>BCC0058</td>
+            </tr>
+            <tr>
+                <td>colombo 10</td>
+                <td>iron</td>
+                <td>weight</td>
+                <td>03 Ton</td>
+                <td>BCC0041</td>
+                <td>BCC0054</td>
+            </tr>
+            <tr>
+                <td>Malabe</td>
+                <td>Loaders</td>
+                <td>Units</td>
+                <td>03 Units</td>
+                <td>BCC0038</td>
+                <td>BCC0078</td>
+            </tr>
+            <tr>
+                <td>colombo 07</td>
+                <td>ceramic</td>
+                <td>units</td>
+                <td>5000 units</td>
+                <td>BCC0032</td>
+                <td>BCC0048</td>
+            </tr>
+            <tr>
+                <td> Kurunagala</td>
+               <td>Iron</td>
+               <td>weight</td>
+               <td>02 tons</td>
+               <td>BCC0047</td>
+               <td>BCC0051</td>
+            </tr>
+            <tr>
+                 <td>Malabe</td>
+                <td>Aluminiam</td>
+                <td>Units</td>
+                <td>05 Units</td>
+                <td>BCC0038</td>
+                <td>BCC0078</td>
+            </tr>
+            <tr>
+                 <td>Ranala</td>
+                <td>Loaders</td>
+                <td>Units</td>
+                <td>02 Units</td>
+                <td>BCC0068</td>
+                <td>BCC0076</td>
+            </tr>
+
+         
+      </table>
+         
+    </div>
+<!------------------------------------>
+    <div class="requirement_form">
+
+      <form >
+
+      <h1 id="form_h">Metirial Requirement Form</h1><br><br>
+
+      <h4>Please Click<br>' ADD NEW REQUIREMENT '<br>To Enter Your Request</h4>
+      <br><br>
+      <a href="http://localhost/php1/IWT%20project/test.html"><button id="f02">ADD NEW REQUIREMENT +</button></a>
+    </form>
+
+    </div>
+    
+      <p id="msg"></p>
+
+ <!----------------footer------------>   
+    <div class="footer">
+      <footer>
+      <div class="address">
+        <p><u><b>Office contact</b></u></p>
+            No 304 B, 1<sup>st</sup> lane, Campus Road,<br>
+           Rathnapitiya,<br>
+           Boralasgamuwa.<br>
+           071 1234567 / 011 9876542<br>
+           info@ABC.lk
+      </div>
+      <div class="image">
+        <p id="text">Standerds</p>
+            <img src="construction-logo-template-260nw-1176504949.webp" width="160" height="100" id="text-image">
+      </div>
+      <div class="signin">
+        <input type="text" value placeholder="E-mail" id="mail"><button id="B2">Sign in</button>
+      </div>
+    </footer>
+    </div>
+
+    <script type="text/javascript">
+      
+      document.getElementById("f02").onclick=function() {
+
+        //document.getElementById("msg").innerHTML="Requirement sent Successfully";
+        alert ("Click OK to continue..");
+        }
+        //login gose to header
+        document.getElementById("B2").onclick= function() {
+
+          var textEntered = ""
+          textEntered = document.getElementById("mail").value;
+          document.getElementById("u01").innerHTML = textEntered;
+
+          alert ("Name change Sucessfull")
+        }
+      
+    </script>
+</body>
+
+</html>

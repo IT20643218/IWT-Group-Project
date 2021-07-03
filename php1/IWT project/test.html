@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testing form</title>
+
+	<style type="text/css">
+
+	* {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #252422;
+      color: white;
+    }
+
+		
+	.form {
+      background-image: url(screen_shot_2013-12-27_at_4.16.54_pm.webp);
+      background-size:cover;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      text-align: center;
+      font-family: sans-serif;
+      padding: 60px;
+      padding-bottom: 42px; 
+      left: 280px;
+      bottom: 38px;
+      width: 50%;
+      position: absolute;
+      
+    }
+    #form_h {
+      font-size: 50px;
+      color: #FD6A02;
+    }
+    #f01 {
+      width: 100%;
+      background: transparent;
+      border:none;
+      outline: none;
+      border-bottom: 1px solid navy;
+      color: black;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    #f02 {
+              float:right;
+              background-color: #FD6A02;
+              color: black;
+              width: 100%;
+              height: 35px;
+              border-radius: 25px;
+              font-family: sans-serif;
+              font-weight: bold;
+              border:none;
+              font-size: 16px;
+             
+            }
+    #f02:hover {
+              background-color: orange;
+              color: black;
+    }
+    #msg {
+      color: #D6ED17FF;
+      text-align: right;
+      font-size: 16px;
+      font-family: cursive;
+      margin-right: 50px;
+      margin-bottom: 10px;
+    }
+
+	</style>
+</head>
+<body>
+      <div class="requirement_form">
+
+      <form action="test.php" method="POST" class="form">
+
+      <h1 id="form_h">Metirial Requirement Form</h1><br><br>
+
+      <input type="text" name="username" placeholder="Name" id="f01"><br>
+      <input type="email" name="usermail" placeholder="E-mail" id="f01"><br>
+      <input type="text" name="location" placeholder="Site-Location" id="f01"><br>
+      <textarea name="message" placeholder="Message" rows="12" required="" id="f01"></textarea><br><br>
+      <button id="f02">Submit</button>
+    </form>
+
+    </div>
+</body>
+</html>
