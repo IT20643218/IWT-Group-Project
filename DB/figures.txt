@@ -1,0 +1,12 @@
+CREATE TABLE company(
+	De_Name char(30),
+	co_amount int,
+	constraint company_PK PRIMARY KEY(co_amount)
+);
+
+insert into company values('Total Completed Projects',75);
+insert into company values('Available Projects',15);
+insert into company values('Ongoing Projects',10);
+insert into company values('Our Workforce',1250);
+insert into company values('Total Annual Budget',82500000);
+insert into company values('Total Capex Budget',5500000);
